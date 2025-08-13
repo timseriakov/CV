@@ -20,11 +20,13 @@
     "@fontsource/open-sans": "^5.2.6",
     "@netlify/plugin-lighthouse": "^6.0.1",
     "@playwright/test": "^1.52.0",
+    "playwright": "^1.54.2",
+    
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.13.8",
     "husky": "^9.1.7",
     "netlify-plugin-playwright-cache": "^0.0.1",
-    "playwright": "^1.54.2",
+    
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
