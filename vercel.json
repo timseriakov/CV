@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/Timofei-Seriakov-CV.pdf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        }
+      ]
+    }
+  ]
+}
