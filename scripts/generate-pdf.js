@@ -9,7 +9,7 @@ const main = async () => {
   await page.emulateMedia({ media: "screen" });
 
   await page.pdf({
-    path: "public/resume.pdf",
+    path: "public/Timofei-Seriakov-CV.pdf",
     margin: { top: "50px", bottom: "80px" },
     printBackground: true,
   });

@@ -2,7 +2,7 @@
 title: Тимофей Серяков - Резюме
 description: Резюме Тимофея Серякова, ведущего React / React Native разработчика.
 layout: ../layouts/Minimalist.astro
-pdfLink: resume.pdf
+pdfLink: Timofei-Seriakov-CV.pdf
 ---
 
 # Тимофей Серяков
