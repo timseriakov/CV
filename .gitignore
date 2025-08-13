@@ -24,3 +24,4 @@ public/*.pdf
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+repomix-output.xml

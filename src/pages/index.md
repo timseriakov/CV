@@ -1,58 +1,97 @@
 ---
-title: Richard Hendriks - Resume
-description: Resume about Richard Hendriks, CEO of Pied Piper.
+title: Тимофей Серяков - Резюме
+description: Резюме Тимофея Серякова, ведущего React / React Native разработчика.
 layout: ../layouts/Minimalist.astro
 pdfLink: resume.pdf
 ---
 
-# Richard Hendriks
+# Тимофей Серяков
 
-**Programmer**
+**Ведущий разработчик**
 
-San Francisco, USA | richard.hendriks@gmail.com | http://richardhendricks.com
+Минск, Беларусь · t.seriakov@gmail.com · +375 33 9 123 846
 
-Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!
+[linkedin.com/in/timofei-seriakov](http://www.linkedin.com/in/timofei-seriakov) · [github.com/timseriakov](http://github.com/timseriakov)
 
-## Work Experience
+Ведущий React / React Native разработчик с 8+ лет опыта: проектировал B2B/B2C-системы, CRM и внутренние инструменты, внедрял архитектурные паттерны, снижал технический долг, ускорял интеграции в 3+ раза и сокращал CI-сборки на 40% — создавая надёжную архитектурную базу для роста продукта.
 
-### [Google](https://www.google.com/)
+## Ключевые навыки
 
-#### Senior Software Engineer | Oct 2022 - Current
+* Техническая стратегия и архитектура
+* Декомпозиция и техническая документация
+* Микросервисы и модульные монолиты
+* Agile и Scrum-подходы
+* Domain‑Driven Design (DDD)
+* Применение  AI  для ускорения разработки
+* Подбор и наставничество специалистов
+* CI/CD: проектирование и внедрение
+* TypeScript и Node.js (NestJS)
+* React / React Native
 
-Elit mollit ipsum fugiat enim labore et non. Amet nulla cupidatat esse est qui magna culpa velit magna excepteur proident Lorem aliquip ullamco. Anim culpa sit cillum enim consectetur aliqua id Lorem aute id id laborum. Sit nostrud ea anim et deserunt cillum sint culpa laboris. Nisi magna amet minim esse dolore. Do officia ipsum duis exercitation incididunt irure pariatur.
+## Релевантный опыт
 
-#### Software Engineer | Aug 2018 - Oct 2022
+### Lifetech (Turkcell Group)
+#### Ведущий разработчик | Минск, Беларусь | 2021–2025
 
-Elit mollit ipsum fugiat enim labore et non. Amet nulla cupidatat esse est qui magna culpa velit magna excepteur proident Lorem aliquip ullamco. Anim culpa sit cillum enim consectetur aliqua id Lorem aute id id laborum. Sit nostrud ea anim et deserunt cillum sint culpa laboris. Nisi magna amet minim esse dolore. Do officia ipsum duis exercitation incididunt irure pariatur.
+* Руководил командами от 4 до 12 человек, определял архитектуру и технический вектор развития.
+* Сократил время CI-сборок на 40% за счёт кеширования сборок и модульной структуры.
+* Внедрил практику real-time мониторинга ошибок — повысил скорость реакции на инциденты.
+* Вёл и поддерживал техническую документацию: ADR, руководства, онбординг.
+* Проводил технические интервью и участвовал в принятии решений по найму.
 
-### [Pied Piper](http://piedpiper.com/)
+### ABF Programming
+#### Frontend разработчик | Минск, Беларусь | 2020–2021
 
-#### CEO/President | Dec 2013 - Dec 2014
+* Работал над SPA-продуктом в финансовой сфере — разрабатывал интерфейс аналитического инструмента.
+* Вёл коммуникацию с заказчиком на английском языке, формировал требования, выстраивал Roadmap проекта.
+* Выстроил процесс работы с накопившимся техдолгом в проекте, где ранее этим не занимались.
 
-Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.
+### BetterWeb Solutions DMCC
+#### Frontend разработчик | Дубай, ОАЭ | 2017–2019
 
-- Build an algorithm for artist to detect if their music was violating copy right infringement laws
-- Successfully won Techcrunch Disrupt
-- Optimized an algorithm that holds the current world record for Weisman Scores
+* Разрабатывал адаптивные интерфейсы CRM-систем по макетам и требованиям.
+* Модульно организовал фронтенд: отделил общую логику и шаблоны, упростил сопровождение и внедрение функционала.
+* Использовал стек PHP, JavaScript (ES6), HTML, CSS — создавал UI-компоненты, обрабатывал формы и API-запросы.
 
-## Projects
+## Ключевые проекты
 
-### [Sillicon Valley](<https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)>)
+### ИССА — Личный кабинет B2B-клиентов мобильного оператора Life:)
+(Информационно-сервисная система абонента)
 
-#### Video Compression for 3D Media
+* Спроектировал архитектуру web-клиента: от UI и моно репозитория до CI/CD.
+* Принимал участие в разработке мобильного приложения (React Native).
+* Организовал техническую документацию, систему компонентной документации (Storybook), внутренний onboarding и гайды.
+* Внедрил мониторинг ошибок, участвовал в развёртывании и поддержке production инфраструктуры.
+* Tech stack: TypeScript, React, React Native, RTK Query, Storybook, Sentry, Docker, Jenkins.
 
-#### Founder | Oct 2014
+### CRM-платформа для партнёров (контрагентов) Life:)
+(Sales Portal)
 
-Innovative middle-out compression algorithm that changes the way we store data.
+* Спроектировал и разработал full-stack систему на основе событийной архитектуры (CQRS, RabbitMQ) с разделением на бизнес-контексты.
+* Реализовал работу с PostgreSQL и OracleDB, авторизацию через Keycloak (OAuth2/SSO, RBAC).
+* Обеспечил сквозную трассировку пользовательских действий по Correlation ID через ELK Stack, используя fanout-механику RabbitMQ.
+* Добился быстрой загрузки интерфейса в условиях мобильной связи с помощью lazy-loading, code splitting, tree-shaking.
+* Сократил время CI-сборок на 40% с кешированием Nx-артефактов в S3 (MinIO).
+* Tech stack: NestJS, Ionic, React, RabbitMQ, PostgreSQL, OracleDB, Keycloak, Nx, Docker, ELK, Sentry, Docker, Jenkins.
 
-## Languages
+### Визуальный редактор сценариев для чат-бота службы поддержки Life:)
+(SmartBot)
 
-| English        | English     |
-| -------------- | ----------- |
-| Native speaker | Proficiency |
+* Спроектировал и реализовал n8n-like  frontend для настройки логики диалогов — drag-and-drop редактирование, предпросмотр и валидация сценариев на лету.
+* Настроил Storybook и E2E-тестирование основных сценариев с Vitest и Testing Library.
+* Инструмент используется операторами поддержки для визуального редактирования сценариев чат-бота.
+* Tech stack: TypeScript, React, React Flow, RTK Query, Zustand, Mantine, Vitest, Storybook, Sentry, Docker, Jenkins.
 
-## Education
+В каждом из проектов внедрил автогенерацию клиентского SDK по OpenAPI — устранил ручную работу, обеспечил стабильный контракт между frontend (web/mobile) и backend и ускорил интеграции.
 
-### University of Oklahoma
+## Образование
 
-#### Bachelor, Information Technology | Jun 2011 - Jan 2014
+### Минский инновационный университет (МИУ)
+#### Информационные технологии в экономике, Инженер-программист-экономист | 2010
+
+## Языки
+
+| Язык       | Уровень      |
+| ---------- | ------------ |
+| Русский    | Родной       |
+| Английский | B1 - Средний |
