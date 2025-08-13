@@ -1,1 +1,1 @@
-pnpm run generate-pdf
+pnpm run generate-pdf:ci
