@@ -28,7 +28,7 @@ pdfLink: Timofei-Seriakov-CV.pdf
 * TypeScript и Node.js (NestJS)
 * React / React Native
 
-## Релевантный опыт
+## Ключевой опыт
 
 ### Lifetech (Turkcell Group)
 #### Ведущий разработчик | Минск, Беларусь | 2021–2025
