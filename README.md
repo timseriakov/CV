@@ -1,78 +1,91 @@
-# astro-resume
+# Тимофей Серяков
 
-[![master](https://github.com/EmaSuriano/astro-resume/actions/workflows/master.yml/badge.svg)](https://github.com/EmaSuriano/astro-resume/actions/workflows/master.yml)
-![Dependabot status](https://badgen.net/github/dependabot/EmaSuriano/astro-resume)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3d621f0a-f078-4a5e-acca-f8c88b552223/deploy-status)](https://app.netlify.com/sites/astro-resume/deploys)
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Ema-suriano/astro-resume)
+**Ведущий разработчик**
 
-> Resume builder based on [Markdown](https://www.markdownguide.org/) and [Tailwind CSS](https://tailwindcss.com/). Built with [Astro](https://astro.build/), and inspired by [Standard Resume](https://standardresume.co/).
+Минск, Беларусь · t.seriakov@gmail.com · +375 33 9 123 846
 
-## [Demo](https://astro-resume.netlify.app)
+[linkedin.com/in/timofei-seriakov](http://www.linkedin.com/in/timofei-seriakov) · [github.com/timseriakov](http://github.com/timseriakov)
 
-## Features
+Ведущий React / React Native разработчик с 8+ лет опыта: проектировал B2B/B2C-системы, CRM и внутренние инструменты, внедрял архитектурные паттерны, снижал технический долг, ускорял интеграции в 3+ раза и сокращал CI-сборки на 40% — создавая надёжную архитектурную базу для роста продукта.
 
-- Full Tailwind CSS integration with `@tailwindcss/typography` plugin
-- Dark mode ready with `:dark` tag powered by Tailwind CSS
-- No need for complex data structure, just write your information in Markdown!
-- Resume PDF generation using [Playwright](https://playwright.dev/)
-- Ready for deployment with [Netlify](https://netlify.com/) or any static website hosting.
-- Fonts powered by [Fontsource](https://fontsource.org/)
-- Full Typescript support
+## Ключевые навыки
 
-## UI
+* Техническая стратегия и архитектура
+* Декомпозиция и техническая документация
+* Микросервисы и модульные монолиты
+* Agile и Scrum-подходы
+* Domain‑Driven Design (DDD)
+* Применение  AI  для ускорения разработки
+* Подбор и наставничество специалистов
+* CI/CD: проектирование и внедрение
+* TypeScript и Node.js (NestJS)
+* React / React Native
 
-### Light mode
+## Ключевой опыт
 
-| Desktop                                                                                                                | Tablet                                                                                                                | Phone                                                                                                                |
-| ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| ![Desktop Light](https://user-images.githubusercontent.com/3399429/198139123-066a9575-b247-494c-bf89-d847cc079cba.png) | ![Tablet light](https://user-images.githubusercontent.com/3399429/198139120-df681ea7-9353-433f-863a-670f3f395995.png) | ![Phone light](https://user-images.githubusercontent.com/3399429/198139113-265d0597-e1cf-4733-ae53-c24bc2a218ac.png) |
+### Lifetech (Turkcell Group)
+#### Ведущий разработчик | Минск, Беларусь | 2021–2025
 
-### Dark mode
+* Руководил командами от 4 до 12 человек, определял архитектуру и технический вектор развития.
+* Сократил время CI-сборок на 40% за счёт кеширования сборок и модульной структуры.
+* Внедрил практику real-time мониторинга ошибок — повысил скорость реакции на инциденты.
+* Вёл и поддерживал техническую документацию: ADR, руководства, онбординг.
+* Проводил технические интервью и участвовал в принятии решений по найму.
 
-| Desktop                                                                                                                | Tablet                                                                                                                | Phone                                                                                                                |
-| ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| ![Desktop Light](https://user-images.githubusercontent.com/3399429/198139151-a04eacbb-f627-4d29-ada6-d353bea60b81.png) | ![Tablet light](https://user-images.githubusercontent.com/3399429/198139141-82076204-7018-415b-b313-1bde36939a8a.png) | ![Phone light](https://user-images.githubusercontent.com/3399429/198139137-e29fa7c8-d152-46de-b038-85faae1e7652.png) |
+### ABF Programming
+#### Frontend разработчик | Минск, Беларусь | 2020–2021
 
-### PDF Generated
+* Работал над SPA-продуктом в финансовой сфере — разрабатывал интерфейс аналитического инструмента.
+* Вёл коммуникацию с заказчиком на английском языке, формировал требования, выстраивал Roadmap проекта.
+* Выстроил процесс работы с накопившимся техдолгом в проекте, где ранее этим не занимались.
 
-| Page 1                                                                                                              | Page 2                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| ![Pdf Page 1](https://user-images.githubusercontent.com/3399429/198139108-252928a4-bd64-4268-bd96-7cd9962dc635.png) | ![Pdf Page 2](https://user-images.githubusercontent.com/3399429/198139094-cf5e16c4-79b7-4094-939f-9960c56621b4.png) |
+### BetterWeb Solutions DMCC
+#### Frontend разработчик | Дубай, ОАЭ | 2017–2019
 
-## Project Structure
+* Разрабатывал адаптивные интерфейсы CRM-систем по макетам и требованиям.
+* Модульно организовал фронтенд: отделил общую логику и шаблоны, упростил сопровождение и внедрение функционала.
+* Использовал стек PHP, JavaScript (ES6), HTML, CSS — создавал UI-компоненты, обрабатывал формы и API-запросы.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Ключевые проекты
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### ИССА — Личный кабинет B2B-клиентов мобильного оператора Life:)
+(Информационно-сервисная система абонента)
 
-Any static assets, like images, can be placed in the `public/` directory.
+* Спроектировал архитектуру web-клиента: от UI и моно репозитория до CI/CD.
+* Принимал участие в разработке мобильного приложения (React Native).
+* Организовал техническую документацию, систему компонентной документации (Storybook), внутренний onboarding и гайды.
+* Внедрил мониторинг ошибок, участвовал в развёртывании и поддержке production инфраструктуры.
+* Tech stack: TypeScript, React, React Native, RTK Query, Storybook, Sentry, Docker, Jenkins.
 
-The pdf is generated at build time, so no need to manually generated it.
+### CRM-платформа для партнёров (контрагентов) Life:)
+(Sales Portal)
 
-## Commands
+* Спроектировал и разработал full-stack систему на основе событийной архитектуры (CQRS, RabbitMQ) с разделением на бизнес-контексты.
+* Реализовал работу с PostgreSQL и OracleDB, авторизацию через Keycloak (OAuth2/SSO, RBAC).
+* Обеспечил сквозную трассировку пользовательских действий по Correlation ID через ELK Stack, используя fanout-механику RabbitMQ.
+* Добился быстрой загрузки интерфейса в условиях мобильной связи с помощью lazy-loading, code splitting, tree-shaking.
+* Сократил время CI-сборок на 40% с кешированием Nx-артефактов в S3 (MinIO).
+* Tech stack: NestJS, Ionic, React, RabbitMQ, PostgreSQL, OracleDB, Keycloak, Nx, Docker, ELK, Sentry, Docker, Jenkins.
 
-All commands are run from the root of the project, from a terminal:
+### Визуальный редактор сценариев для чат-бота службы поддержки Life:)
+(SmartBot)
 
-| Command             | Action                                             |
-| :------------------ | :------------------------------------------------- |
-| `yarn`              | Installs dependencies                              |
-| `yarn dev`          | Starts local dev server at `localhost:4321`        |
-| `yarn build`        | Build your production site to `./dist/`            |
-| `yarn preview`      | Preview your build locally, before deploying       |
-| `yarn astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `yarn astro --help` | Get help using the Astro CLI                       |
+* Спроектировал и реализовал n8n-like  frontend для настройки логики диалогов — drag-and-drop редактирование, предпросмотр и валидация сценариев на лету.
+* Настроил Storybook и E2E-тестирование основных сценариев с Vitest и Testing Library.
+* Инструмент используется операторами поддержки для визуального редактирования сценариев чат-бота.
+* Tech stack: TypeScript, React, React Flow, RTK Query, Zustand, Mantine, Vitest, Storybook, Sentry, Docker, Jenkins.
 
-## How to setup your own resume?
+В каждом из проектов внедрил автогенерацию клиентского SDK по OpenAPI — устранил ручную работу, обеспечил стабильный контракт между frontend (web/mobile) и backend и ускорил интеграции.
 
-- You can quickly clone this repository by clicking on [Use this template](https://github.com/EmaSuriano/astro-resume/generate).
-- After your repository is created, you should modify [index.md](./src/pages/index.md) with your information.
-- Once you are done, push your changes into your repository.
-- Select any of the available options to deploy your websites. This project already provides the setup to deploy with Netlify, you can check [this guide](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) for more information.
+## Образование
 
-## Contributing
+### Минский инновационный университет (МИУ)
+#### Информационные технологии в экономике, Инженер-программист-экономист | 2010
 
-Feel free to open issues or/and pull requests into this repository to improve it!
+## Языки
 
-## License
+| Язык       | Уровень      |
+| ---------- | ------------ |
+| Русский    | Родной       |
+| Английский | B1 - Средний |
 
-MIT.
