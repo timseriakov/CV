@@ -11,7 +11,7 @@ pdfLink: Timofei-Seriakov-CV.pdf
 
 Минск, Беларусь · t.seriakov@gmail.com · +375 33 9 123 846
 
-[linkedin.com/in/timofei-seriakov](http://www.linkedin.com/in/timofei-seriakov) · [github.com/timseriakov](http://github.com/timseriakov)
+[linkedin.com/in/timofei-seriakov](https://www.linkedin.com/in/timofei-seriakov) · [github.com/timseriakov](https://github.com/timseriakov)
 
 Ведущий React / React Native разработчик с 8+ лет опыта: проектировал B2B/B2C-системы, CRM и внутренние инструменты, внедрял архитектурные паттерны, снижал технический долг, ускорял интеграции в 3+ раза и сокращал CI-сборки на 40% — создавая надёжную архитектурную базу для роста продукта.
 
