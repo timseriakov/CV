@@ -1,5 +1,4 @@
 ---
-import "@fontsource/open-sans";
 import Download from "../components/Download.astro";
 import "../styles.css";
 
@@ -30,12 +29,12 @@ const { title, pdfLink, noIndex, description } = Astro.props
     {noIndex && <meta name="robots" content="noindex" />}
     <title>{title}</title>
   </head>
-  <body class={!PDF_VIEW ? "bg-indigo-50 dark:bg-[#2b292d] sm:my-14" : ""}>
-    <div class="container mx-auto flex justify-center">
+  <body class={!PDF_VIEW ? "bg-indigo-50 text-slate-800 antialiased dark:bg-[#2b292d] sm:my-14" : "text-slate-800 antialiased"}>
+    <div class="container mx-auto flex justify-center px-4 sm:px-6">
       <article class="minimalist relative">
         {
           !PDF_VIEW && (
-            <div class="not-prose absolute right-4 top-4">
+            <div class="not-prose absolute right-5 top-5">
               <Download href={pdfLink} />
             </div>
           )
