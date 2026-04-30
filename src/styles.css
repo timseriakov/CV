@@ -21,3 +21,7 @@ article.minimalist {
     sm:px-24 sm:py-14
     lg:max-w-4xl;
 }
+
+article.minimalist hr {
+  @apply my-8 border-0 border-t border-slate-200;
+}
