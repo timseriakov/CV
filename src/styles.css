@@ -23,5 +23,5 @@ article.minimalist {
 }
 
 article.minimalist hr {
-  @apply my-8 border-0 border-t border-slate-200;
+  @apply my-10 w-full border-0 border-t border-slate-300/80 dark:border-slate-500/60;
 }
