@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
 }
 
 ::selection {
@@ -7,18 +7,19 @@ body {
 }
 
 article.minimalist {
-  @apply prose prose-slate m-0 text-slate-800
-    max-w-fit bg-white px-6 py-8 pt-20 dark:prose-invert prose-h1:text-3xl prose-h1:uppercase dark:prose-h1:text-[#d4b483] prose-h2:mb-3 prose-h2:mt-8 prose-h2:text-lg
-    prose-h2:uppercase prose-h2:font-semibold prose-h2:tracking-wide prose-h2:text-slate-600 dark:prose-h2:text-[#d4b483]
-    prose-h3:mb-3 prose-h3:mt-8 prose-h3:text-xl prose-h3:uppercase prose-h4:mb-3
-    prose-h4:mt-4 prose-h4:text-sm prose-h4:text-slate-600 prose-p:my-2
-    prose-p:text-sm prose-p:leading-6 prose-p:text-slate-800 prose-a:font-bold prose-a:no-underline prose-a:transition-colors dark:prose-strong:text-[#d4b483]
-    hover:prose-a:text-slate-400 prose-li:text-sm prose-li:text-slate-800 prose-table:mt-4 prose-thead:border-0
-    prose-th:p-0 prose-th:font-medium prose-td:p-0
-    prose-td:text-slate-700
-    dark:bg-[#36343B] dark:text-[#ffffff] dark:prose-p:text-[#ffffff] dark:prose-li:text-[#ffffff]
-    dark:prose-td:text-[#fffaf4] dark:prose-h4:text-[#cabdaf] dark:prose-a:text-[#dcc8ae] dark:hover:prose-a:text-[#efe0cc]
-    sm:px-24 sm:py-14
+  @apply prose prose-slate m-0 max-w-3xl bg-white px-7 py-10 pt-20 text-slate-800
+    dark:prose-invert prose-h1:text-3xl prose-h1:font-semibold prose-h1:normal-case prose-h1:tracking-[-0.03em]
+    prose-h1:leading-tight dark:prose-h1:text-[#d4b483] prose-h2:mb-4 prose-h2:mt-10 prose-h2:text-[0.95rem]
+    prose-h2:font-semibold prose-h2:normal-case prose-h2:tracking-[0.08em] prose-h2:text-slate-500
+    dark:prose-h2:text-[#d4b483] prose-h3:mb-3 prose-h3:mt-8 prose-h3:text-xl prose-h3:uppercase prose-h4:mb-3
+    prose-h4:mt-4 prose-h4:text-sm prose-h4:text-slate-600 prose-p:my-3 prose-p:text-sm
+    prose-p:leading-7 prose-p:text-slate-800 prose-a:font-semibold prose-a:no-underline prose-a:transition-colors
+    dark:prose-strong:text-[#d4b483] hover:prose-a:text-slate-400 prose-li:my-1 prose-li:text-sm
+    prose-li:leading-7 prose-li:text-slate-800 prose-table:mt-4 prose-thead:border-0 prose-tr:border-0 prose-th:p-0
+    prose-th:font-medium prose-td:p-0 prose-td:text-slate-700 dark:bg-[#36343B] dark:text-[#ffffff]
+    dark:prose-p:text-[#ffffff] dark:prose-li:text-[#ffffff] dark:prose-td:text-[#fffaf4]
+    dark:prose-h4:text-[#cabdaf] dark:prose-a:text-[#dcc8ae] dark:hover:prose-a:text-[#efe0cc]
+    sm:px-16 sm:py-16
     lg:max-w-4xl;
 }
 
@@ -27,17 +28,22 @@ article.minimalist hr {
 }
 
 article.minimalist .contact-line {
-  @apply text-sm leading-6;
+  @apply text-[0.95rem] leading-6 tracking-[0.01em];
 }
 
 article.minimalist .contact-muted {
-  @apply text-slate-600 dark:text-[#f3ece4];
+  @apply text-slate-500 dark:text-[#e6dbcf];
 }
 
 article.minimalist .contact-email {
-  @apply font-semibold text-slate-900 no-underline transition-colors dark:text-[#fffaf4];
+  @apply font-medium text-slate-900 no-underline transition-colors dark:text-[#fffaf4];
 }
 
 article.minimalist .contact-email:hover {
   @apply text-slate-700 dark:text-[#ffffff];
+}
+
+article.minimalist h1,
+article.minimalist h2 {
+  text-wrap: balance;
 }
