@@ -11,7 +11,7 @@ pdfLink: Timofei-Seriakov-CV.pdf
 
 <p class="contact-line"><span class="contact-muted">Минск, Беларусь</span> · <a class="contact-email" href="mailto:t.seriakov@gmail.com">t.seriakov@gmail.com</a> · <span class="contact-muted">+375 33 9 123 846</span></p>
 
-[linkedin.com/in/timofei-seriakov](https://www.linkedin.com/in/timofei-seriakov) · [github.com/timseriakov](https://github.com/timseriakov)
+[github.com/timseriakov](https://github.com/TimSeriakov) · [linkedin.com/in/timseriakov](https://linkedin.com/in/TimSeriakov)
 
 ---
 
