@@ -68,3 +68,73 @@ article.minimalist li {
     font-weight: 500;
   }
 }
+
+body.pdf-view article.minimalist {
+  max-width: none;
+  width: 100%;
+  background: transparent;
+  padding-top: 3rem;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+body.pdf-view article.minimalist hr,
+body.pdf-view article.minimalist h2,
+body.pdf-view article.minimalist h3,
+body.pdf-view article.minimalist h4 {
+  break-after: avoid-page;
+  page-break-after: avoid;
+}
+
+body.pdf-view article.minimalist p,
+body.pdf-view article.minimalist ul,
+body.pdf-view article.minimalist table {
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+
+@media print {
+  body {
+    background: #fff !important;
+  }
+
+  body > div {
+    display: flex !important;
+    justify-content: center !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  .download-control {
+    display: none !important;
+  }
+
+  article.minimalist {
+    max-width: none !important;
+    width: auto !important;
+    background: #fff !important;
+    margin: 0 !important;
+    padding-top: 3rem !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  article.minimalist hr,
+  article.minimalist h2,
+  article.minimalist h3,
+  article.minimalist h4 {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  article.minimalist p,
+  article.minimalist ul,
+  article.minimalist table {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+}

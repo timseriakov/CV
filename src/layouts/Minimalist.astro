@@ -13,6 +13,7 @@ type Props = {
 };
 
 const { PDF_VIEW, FORCE_THEME = "" } = import.meta.env;
+const IS_PDF_VIEW = PDF_VIEW || Astro.url.searchParams.has("pdf");
 
 const { title, pdfLink, noIndex, description } = Astro.props
   .frontmatter as Props["frontmatter"];
@@ -30,12 +31,12 @@ const { title, pdfLink, noIndex, description } = Astro.props
     {noIndex && <meta name="robots" content="noindex" />}
     <title>{title}</title>
   </head>
-  <body class={!PDF_VIEW ? "bg-indigo-50 text-slate-800 antialiased dark:bg-[#2b292d] sm:my-14" : "text-slate-800 antialiased"}>
-    <div class="container mx-auto flex justify-center px-4 sm:px-6">
+  <body class={!IS_PDF_VIEW ? "bg-indigo-50 text-slate-800 antialiased dark:bg-[#2b292d] sm:my-14" : "pdf-view bg-white text-slate-800 antialiased"}>
+    <div class={IS_PDF_VIEW ? "mx-auto flex justify-center" : "container mx-auto flex justify-center px-4 sm:px-6"}>
       <article class="minimalist relative">
         {
-          !PDF_VIEW && (
-            <div class="not-prose absolute right-4 top-4">
+          !IS_PDF_VIEW && (
+            <div class="download-control not-prose absolute right-4 top-4">
               <Download href={pdfLink} />
             </div>
           )
