@@ -51,6 +51,11 @@ article.minimalist .contact-email:hover {
   @apply text-slate-700 dark:text-[#ffffff];
 }
 
+article.minimalist p,
+article.minimalist li {
+  font-weight: 500;
+}
+
 @media (prefers-color-scheme: dark) {
   article.minimalist p,
   article.minimalist li {
