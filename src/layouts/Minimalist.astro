@@ -1,49 +1,62 @@
 ---
-import "@fontsource/open-sans";
-import Download from "../components/Download.astro";
 import "../styles.css";
-
 type Props = {
-  frontmatter: {
-    title: string;
-    pdfLink: string;
-    noIndex?: boolean;
-    description?: string;
-  };
+  frontmatter: { title: string; description?: string; pdfLink?: string; noIndex?: boolean };
+  home?: boolean;
 };
-
-const { PDF_VIEW, FORCE_THEME = "" } = import.meta.env;
-const IS_PDF_VIEW = PDF_VIEW || Astro.url.searchParams.has("pdf");
-
-const { title, pdfLink, noIndex, description } = Astro.props
-  .frontmatter as Props["frontmatter"];
-
+const { frontmatter: { title, description, noIndex }, home = false } = Astro.props;
+const pdf = Boolean(import.meta.env.PDF_VIEW || Astro.url.searchParams.has("pdf"));
+const theme = import.meta.env.FORCE_THEME || "";
 ---
-
 <!doctype html>
-<html lang="en" class={FORCE_THEME}>
+<html lang="ru" class={theme}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description || title} />
     {noIndex && <meta name="robots" content="noindex" />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <title>{title}</title>
   </head>
-  <body class={!IS_PDF_VIEW ? "bg-indigo-50 text-slate-800 antialiased dark:bg-[#2b292d] sm:my-14" : "pdf-view bg-white text-slate-800 antialiased"}>
-    <div class={IS_PDF_VIEW ? "mx-auto flex justify-center" : "container mx-auto flex justify-center px-4 sm:px-6"}>
-      <article class="minimalist relative">
-        {
-          !IS_PDF_VIEW && (
-            <div class="download-control not-prose absolute right-4 top-4">
-              <Download href={pdfLink} />
-            </div>
-          )
+  <body class:list={[{ "pdf-view": pdf, homepage: home }]}>
+    <main class:list={[{ resume: !home }]}><article><slot /></article></main>
+    {!pdf && <nav aria-label="Основная навигация" class="menu-v2">
+      <div class="menu-v2-inner">
+        <div id="menu-links" inert>
+          <a href="/" aria-current={home ? "page" : undefined}>Главная</a>
+          <span class="menu-v2-divider" aria-hidden="true"></span>
+          <a href="/resume" aria-current={!home ? "page" : undefined}>Резюме</a>
+          <a href="/Timofei-Seriakov-CV.pdf" download aria-label="Скачать резюме в PDF">Резюме PDF</a>
+          <span class="menu-v2-divider" aria-hidden="true"></span>
+          <a href="mailto:t.seriakov@gmail.com">Написать</a>
+        </div>
+        <button type="button" class="menu-v2-trigger" aria-expanded="false" aria-controls="menu-links">Меню</button>
+      </div>
+    </nav>}
+    <script>
+      const menu = document.querySelector<HTMLElement>(".menu-v2");
+      const trigger = document.querySelector<HTMLButtonElement>(".menu-v2-trigger");
+      const links = document.querySelector<HTMLElement>("#menu-links");
+      const setOpen = (open: boolean) => {
+        menu?.classList.toggle("is-open", open);
+        trigger?.setAttribute("aria-expanded", String(open));
+        if (trigger) trigger.textContent = open ? "Закрыть" : "Меню";
+        if (links) links.inert = !open;
+      };
+      trigger?.addEventListener("click", () => setOpen(trigger.getAttribute("aria-expanded") !== "true"));
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && menu?.classList.contains("is-open")) {
+          setOpen(false);
+          trigger?.focus();
         }
-        <slot />
-      </article>
-    </div>
-    <style></style>
+      });
+      document.addEventListener("click", (event) => {
+        if (event.target instanceof Node && menu && !menu.contains(event.target)) setOpen(false);
+      });
+      if (new URLSearchParams(location.search).has("pdf")) {
+        document.body.classList.add("pdf-view");
+        menu?.remove();
+      }
+    </script>
   </body>
 </html>

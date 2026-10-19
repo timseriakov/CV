@@ -4,7 +4,7 @@ const main = async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  await page.goto("http://localhost:4321/?pdf=1", { waitUntil: "networkidle" });
+  await page.goto("http://localhost:4321/resume?pdf=1", { waitUntil: "networkidle" });
 
   await page.emulateMedia({ media: "print" });
 
