@@ -133,6 +133,7 @@ body.pdf-view { --background: #fff; --text: #333; --heading: #111; --line: #ddd;
   .homepage p, .homepage .social-links { font-size: 21px; line-height: 34px; }
 }
 @media (max-width: 720px) {
+  .homepage main { margin-bottom: calc(96px + env(safe-area-inset-bottom)); }
   .homepage p, .homepage .social-links { font-size: 19px; line-height: 30px; }
   .homepage h1 { font-size: 32px; line-height: 40px; }
 }
