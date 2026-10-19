@@ -5,6 +5,7 @@ type Props = {
   home?: boolean;
 };
 const { frontmatter: { title, description, noIndex }, home = false } = Astro.props;
+const projects = Astro.url.pathname === "/projects";
 const pdf = Boolean(import.meta.env.PDF_VIEW || Astro.url.searchParams.has("pdf"));
 const theme = import.meta.env.FORCE_THEME || "";
 ---
@@ -25,7 +26,8 @@ const theme = import.meta.env.FORCE_THEME || "";
         <div id="menu-links" inert>
           <a href="/" aria-current={home ? "page" : undefined}>Главная</a>
           <span class="menu-v2-divider" aria-hidden="true"></span>
-          <a href="/resume" aria-current={!home ? "page" : undefined}>Резюме</a>
+          <a href="/resume" aria-current={!home && !projects ? "page" : undefined}>Резюме</a>
+          <a href="/projects" aria-current={projects ? "page" : undefined}>Проекты</a>
           <a href="/Timofei-Seriakov-CV.pdf" download aria-label="Скачать резюме в PDF">Резюме PDF</a>
           <span class="menu-v2-divider" aria-hidden="true"></span>
           <a href="mailto:t.seriakov@gmail.com">Написать</a>
