@@ -44,8 +44,10 @@ p a { color: var(--heading); }
 .resume li { position: relative; font-size: 19px; line-height: 32px; padding-left: 22px; margin-bottom: 10px; text-wrap: pretty; }
 .resume li::before { content: ""; position: absolute; left: 1px; top: .8em; width: 7px; height: 1px; background: currentColor; opacity: .65; }
 .resume hr { border: 0; border-top: 1px solid var(--line); margin: 0 0 37px; }
-.resume table { width: 100%; border-collapse: collapse; font-size: 15px; }
-.resume td, .resume th { text-align: left; padding: 8px; vertical-align: top; }
+.resume h2:has(+ table) { margin-bottom: 16px; }
+.resume table { width: auto; border-collapse: collapse; font-size: inherit; line-height: inherit; }
+.resume td, .resume th { text-align: left; padding: 5px 32px 5px 0; vertical-align: top; }
+.resume td:last-child, .resume th:last-child { padding-right: 0; }
 .resume a { overflow-wrap: anywhere; }
 @media (max-width: 600px) {
   main { margin-top: 72px; }
