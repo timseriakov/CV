@@ -1,0 +1,6 @@
+{
+  "id": "arc-net",
+  "name": "Arc (arc.net)",
+  "domains": ["arc.net", "*.arc.net"],
+  "notes": ["notes/overview.md"]
+}

@@ -1,0 +1,5 @@
+# Skill development machinery, not part of the shipped skill
+_dev/
+
+.DS_Store
+__pycache__/

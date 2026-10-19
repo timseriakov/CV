@@ -1,0 +1,51 @@
+{
+  "id": "clone-website",
+  "name": "Clone Website",
+  "notes": ["references/probes.md", "references/eval.md"],
+  "nodeTools": {
+    "capture_static": {
+      "description": "Capture a live page's ground truth in one pass: full DOM, section outline with rects, CSS/font/JS resource URLs, and a scroll-0 fullPage screenshot, with videos frozen and viewport guarded.",
+      "path": "tools/capture-static.js",
+      "callable": "captureStatic",
+      "args": {
+        "url": { "type": "string", "required": true, "description": "Page URL to capture." },
+        "outDir": { "type": "string", "required": true, "description": "Directory for artifacts; dom/, screenshots/ subdirs are created. Large output goes here, not to the return value." },
+        "minSectionHeight": { "type": "integer", "required": false, "description": "Ignore outline sections shorter than this in px. Default 40." }
+      },
+      "returns": { "type": "object", "description": "Summary: { sections, cssFiles, fontFiles, jsChunks, htmlKB, screenshot } with artifact paths." }
+    },
+    "inventory_animations": {
+      "description": "List every runtime animation on the current page via document.getAnimations: resolved keyframes, timeline type (ViewTimeline = scroll-driven), ranges, target element, and inline per-element parameters.",
+      "path": "tools/inventory-animations.js",
+      "callable": "inventoryAnimations",
+      "args": {
+        "maxAnimations": { "type": "integer", "required": false, "description": "Cap on returned animations. Default 200, max 500." },
+        "outPath": { "type": "string", "required": false, "description": "If set, write the full inventory JSON here and return only a summary." }
+      },
+      "returns": { "type": "object", "description": "{ count, byTimeline: {ViewTimeline: n, DocumentTimeline: n}, animations | outPath }." }
+    },
+    "sample_scroll_states": {
+      "description": "Snapshot a fixed/sticky element's full subtree (rect, opacity, radius, background, shadow per descendant) at multiple scroll depths in both directions, dispatching scroll events manually so background task spaces still drive the state machine.",
+      "path": "tools/sample-scroll-states.js",
+      "callable": "sampleScrollStates",
+      "args": {
+        "selector": { "type": "string", "required": true, "description": "CSS selector of the stateful element." },
+        "depths": { "type": "array", "required": false, "description": "Scroll depths in px, sampled top-down then bottom-up. Default [0, 500, 1500, 3300, 7000]." },
+        "settleMs": { "type": "integer", "required": false, "description": "Wait after each scroll dispatch in ms. Default 600, max 2000." }
+      },
+      "returns": { "type": "object", "description": "{ down_<y>: subtree, up_<y>: subtree } snapshots; diff adjacent keys to read the state machine." }
+    },
+    "eval_probe": {
+      "description": "Run the standardized benchmark probe on a page (original or clone): section outline, per-section element samples with geometry/typography/color facts, loaded fonts, asset inventory, animation summary, per-section content density, plus a scroll-0 fullPage screenshot. Infinite time-driven animations (GSAP repeat:-1, infinite Web Animations, looped carousels) are phase-normalized to a deterministic state before sampling so moving elements measure comparably. Both sides of a benchmark must use this identical probe.",
+      "path": "tools/eval-probe.js",
+      "callable": "evalProbe",
+      "args": {
+        "url": { "type": "string", "required": true, "description": "Page URL to probe." },
+        "outPath": { "type": "string", "required": true, "description": "Where to write the probe JSON." },
+        "screenshotPath": { "type": "string", "required": true, "description": "Where to write the scroll-0 fullPage screenshot." },
+        "maxPerSection": { "type": "integer", "required": false, "description": "Element samples per section. Default 8, max 20." }
+      },
+      "returns": { "type": "object", "description": "Summary: { url, viewport, pageH, sections, sampledElements, fonts, assets, animations, outPath, screenshotPath }." }
+    }
+  }
+}

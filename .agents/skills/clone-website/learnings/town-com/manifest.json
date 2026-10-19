@@ -1,0 +1,6 @@
+{
+  "id": "town-com",
+  "name": "Town (town.com)",
+  "domains": ["town.com", "*.town.com"],
+  "notes": ["notes/overview.md"]
+}

@@ -7,6 +7,12 @@
       "skillPath": "skills/brandkit/SKILL.md",
       "computedHash": "b63012f3c3d21197e0185d3e9cc7ec40c589fb10e0b5a32a561739de31aa3f20"
     },
+    "clone-website": {
+      "source": "braxtonROSE4/clone-any-website",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "1a249ff293d4d1a2bbaeb5601bbe764ef44890d7daa67ffcaf0755c6461d8b52"
+    },
     "gpt-taste": {
       "source": "Leonxlnx/taste-skill",
       "sourceType": "github",

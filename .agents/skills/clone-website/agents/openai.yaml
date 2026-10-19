@@ -1,0 +1,4 @@
+interface:
+  display_name: "clone-website"
+  short_description: "Pixel-perfect clone any live website on ego lite"
+  default_prompt: "Use $clone-website to reverse-engineer and clone a website 1:1, then benchmark the clone against the original."

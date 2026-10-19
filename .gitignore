@@ -25,3 +25,4 @@ pnpm-debug.log*
 /blob-report/
 /playwright/.cache/
 repomix-output.xml
+.vercel
