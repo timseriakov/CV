@@ -64,19 +64,32 @@ p a { color: var(--heading); }
   .resume li { line-height: 30px; }
 }
 body.pdf-view { --background: #fff; --text: #333; --heading: #111; --line: #ddd; color-scheme: light; }
-.pdf-view main { width: 100%; margin: 0; }
-.pdf-view h2, .pdf-view h3, .pdf-view h4 { break-after: avoid; }
-.pdf-view p, .pdf-view li { font-size: 11px; line-height: 1.6; }
+@page { size: A4; margin: 16mm 17mm 18mm; }
 @media print {
   :root { color-scheme: light; --background: #fff; --text: #333; --heading: #111; --line: #ddd; }
   .menu-v2 { display: none; }
-  main, .resume { width: 100%; margin: 0; }
-  h1 { font-size: 26px; line-height: 1.3; }
-  .resume h2 { font-size: 16px; margin-top: 26px; }
-  .resume h3 { font-size: 14px; }
-  .resume h4 { font-size: 11px; }
-  .resume p, .resume li { font-size: 11px; line-height: 1.6; }
-  h2, h3, h4 { break-after: avoid; }
+  body, main, .resume { width: 100%; margin: 0; }
+  body { background: #fff; }
+  .resume { font-size: 10.5pt; line-height: 1.48; }
+  .resume h1 { font-size: 26pt; line-height: 1.15; margin: 0 0 10pt; }
+  .resume h2 { font-size: 15pt; line-height: 1.2; margin: 20pt 0 9pt; break-after: avoid-page; }
+  .resume h3 { font-size: 11.5pt; line-height: 1.3; margin: 10pt 0 4pt; break-after: avoid-page; }
+  .resume h4 { font-size: 9.5pt; line-height: 1.35; margin: 0 0 6pt; break-after: avoid-page; }
+  .resume h3:has(+ .project-subtitle) { break-after: avoid-page; }
+  .resume .project-subtitle { break-after: avoid-page; }
+  .resume h3:has(+ .project-subtitle) + .project-subtitle + ul { break-before: avoid-page; }
+  .resume p { font-size: inherit; line-height: inherit; margin: 0 0 8pt; orphans: 3; widows: 3; }
+  .resume ul { margin: 0 0 11pt; padding-left: 0; }
+  .resume li { font-size: inherit; line-height: inherit; padding-left: 13pt; margin-bottom: 3pt; break-inside: avoid; orphans: 2; widows: 2; }
+  .resume li::before { left: 1pt; top: .78em; width: 5pt; }
+  .resume hr { margin: 10pt 0; }
+  .resume table { font-size: inherit; line-height: inherit; }
+  .resume td, .resume th { padding: 2pt 22pt 2pt 0; }
+  .resume td:last-child, .resume th:last-child { padding-right: 0; }
+  .resume h2:has(+ table) { margin-bottom: 4pt; }
+  .resume .project-subtitle { font-size: 10pt; line-height: 1.35; margin-bottom: 5pt; }
+  .resume .contact-line { margin-top: 12pt; }
+  .resume .contact-email { color: inherit; }
   a { color: inherit; }
 }
 

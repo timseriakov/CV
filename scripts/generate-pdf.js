@@ -10,7 +10,7 @@ const main = async () => {
 
   await page.pdf({
     path: "public/Timofei-Seriakov-CV.pdf",
-    margin: { top: "50px", right: "56px", bottom: "80px", left: "56px" },
+    preferCSSPageSize: true,
     printBackground: true,
   });
 
